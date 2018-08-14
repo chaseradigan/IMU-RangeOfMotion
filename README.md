@@ -9,4 +9,6 @@ Processing IDE was used on the computer to calculate the angle between the two I
 
 The Processing program received the pitch data from the IMU's over bluetooth from the Arduino's. At every iteration it would draw two lines. The upper arm line would start at a fixed position to act as the shoulder and the lower arm line would start wherever the upper arm line ended at each iteration. This intersection of the lower and upper arm would represent the elbow. Finally, I was able to calculate the angle between these two lines so I could output the angle between the two IMU’s onto the screen along with the visual representation.
 
+![angle](https://user-images.githubusercontent.com/27930636/44106296-1b249fa2-9fa9-11e8-87ac-371d8a9a9c68.JPG)
+
 The final system had three computers running code. There were algorithms running on the two Arduino’s and the PC. The Arduino sends pitch data and the PC is processes that data to draw two sperate lines on the computer representing the humorous and the fore arm and calculates the angle between the two lines.
